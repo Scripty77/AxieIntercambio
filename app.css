@@ -1,8 +1,0 @@
-@media only screen and (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    --primary: #0d293a;
-    --primary-hover: #629eb9;
-    --primary-focus: rgba(233, 91, 143, 0.25);
-    --primary-inverse: #ffffff;
-  }
-}

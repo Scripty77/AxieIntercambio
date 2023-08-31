@@ -4,11 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/pico-1.5.10/css/pico.min.css">
+    <link rel="stylesheet" href="/styles.css">
     <title>Sala</title>
   </head>
   <body>
     <main class="container">
-      <h4>Direccion ronin:</h4>
+      <h6> Codigo De Sala: <span id="room-number"></span></h6>
+      <h6>Direccion Ronin a Enviar:  <input type="text" id="input-number" name="input-number"></h4>
+      <button class="enviar"Bottom" data-placement="bottom">Enviar</button> 
     </main>
+    <script>
+      window.addEventListener('load', function() {
+        // Recuperar el número de la sala del almacenamiento local del navegador
+        var idSala = localStorage.getItem('idSala');
+        
+        // Mostrar el número de la sala en el elemento "Número de Sala:"
+        document.getElementById('room-number').textContent = idSala;
+      });
+    </script> 
   </body>
 </html>
