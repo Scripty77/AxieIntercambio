@@ -1,7 +1,7 @@
 @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --primary: #0d293a;
-    --primary-hover: #629eb9;
+    --primary: #154563;
+    --primary-hover: #88b9cf;
     --primary-focus: rgba(233, 91, 143, 0.25);
     --primary-inverse: #ffffff;
   }
@@ -28,8 +28,4 @@
 #title, #flags {
   display: inline-flex;
   align-items: center;
-}
-
-#flags {
-  margin-left: 37rem;
 }

@@ -12,19 +12,20 @@
       <h1 id="title" data-section="en" data-value="titulo">AxieIntercambio</h1>
       <div id="flags" class="flags">
           <div class="flags_item" data-language="en">
-            <img src="/icons/en.png"  width="35px">
+            <img src="/icons/en (2).png">
            </div>
       </div>
-      <h2 id="description" data-section="en" data-value="descripcion">Bienvenido a AxieIntercambio lugar creado para el intercambio de activos del ecosistema de axie de forma segura y rapida</h2>
+      <h2 id="description" data-section="en" data-value="descripcion">¡Bienvenido a AxieIntercambio! Este es un lugar especialmente diseñado para el intercambio seguro y rápido de activos dentro del ecosistema de Axie.</h2>
       <button id="create-room-button" onclick="crearSala()" data-section="en" data-value="botom_Sala">Crear sala</button>
       <h3 id="enter-room-button" data-section="en" data-value="Entrar">Entrar en Sala</h3>
-      <form>
-         <label id="code-label" for="input-number" data-section="en" data-value="codigo">Introduce Codigo</label>
-         <input type="text" id="input-number" name="input-number">
-         <button data-section="en" data-value="entrar">Entrar</button>
-       </form>       
+      <!-- Formulario para unirse a una sala -->
+      <form id="join-room-form">
+        <label for="room-code">Código de la sala:</label>
+        <input type="text" id="room-code" name="room-code" required>
+        <input type="submit" value="Unirse a la sala">
+      </form>       
     </main>
-    <script src="languages/lenguage.js"></script>
-    <script src="creacion de sala.js"></script>
+    <script src="/creacion de sala.js"></script>
+    <script src="/languages/lenguage.js"></script>
   </body>
 </html>
