@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ronin P2P Swap
 
-## Getting Started
+Swap NFTs, token, anything you like with your peers.
 
-First, run the development server:
+## Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1. Two users enter to a chat room.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  - There must be a button to create a room.
+  - The new room must generate an invite link (only the one with the link can join) - can have password
+  - There must be a chat UI in the room
+  - There must be a UI showing the assets of both parties. They can be either tokens or NFTs (They can be NFTs and tokens at the same time).
+  - Assets must be represented by an image and its name. 
+  - Chat must show the connected ronin wallets of each party.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Swap
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. The first step is to have a conversation (if needed) and the users will be able to select NFTs/token and amounts depending on the funds they have in their wallets.
+3. Once they are selected they need to be shown to each party with a flag stating that they haven't been approved
+4. each party must approve the swap of their assets.
+5. Once both parties have approved there assets (blockchain tx), a new button will show up as "Confirm", only when two parties confirm the swap with a signature the smart contract will swap the assets.
 
-## Learn More
+Considerations:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- The swap can be canceled only before pressing the confirm button

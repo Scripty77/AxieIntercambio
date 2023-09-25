@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/pico-1.5.10/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>AxieIntercambio</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 id="title" data-section="en" data-value="titulo">AxieIntercambio</h1>
+      <div id="flags" class="flags">
+          <div class="flags_item" data-language="en">
+            <img src="/icons/en (2).png">
+           </div>
+      </div>
+      <h2 id="description" data-section="en" data-value="descripcion">¡Bienvenido a AxieIntercambio! Este es un lugar especialmente diseñado para el intercambio seguro y rápido de activos dentro del ecosistema de Axie.</h2>
+      <button id="create-room-button" onclick="crearSala()" data-section="en" data-value="botom_Sala">Crear sala</button>
+      <h3 id="enter-room-button" data-section="en" data-value="Entrar">Entrar en Sala</h3>
+      <!-- Formulario para unirse a una sala -->
+      <form id="join-room-form">
+        <label for="room-code">Código de la sala:</label>
+        <input type="text" id="room-code" name="room-code" required>
+        <input type="submit" value="Unirse a la sala">
+      </form>       
+    </main>
+    <script src="/creacion de sala.js"></script>
+    <script src="/languages/lenguage.js"></script>
+  </body>
+</html>

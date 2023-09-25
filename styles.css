@@ -1,0 +1,31 @@
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --primary: #154563;
+    --primary-hover: #88b9cf;
+    --primary-focus: rgba(233, 91, 143, 0.25);
+    --primary-inverse: #ffffff;
+  }
+}
+
+.enviar {
+  margin-top: 620px;
+}
+
+.flags{
+  width: 65px;
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.flags_img{
+  display: block;
+  cursor: pointer;
+}
+
+#title, #flags {
+  display: inline-flex;
+  align-items: center;
+}
